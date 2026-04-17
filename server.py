@@ -15,8 +15,7 @@ import logging
 from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv(os.path.join(os.path.dirname(__file__), "config", ".env"))
-
+load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config", ".env"))
 # Configure logging to stderr (NEVER use print — it corrupts STDIO transport)
 logging.basicConfig(
     level=logging.INFO,
