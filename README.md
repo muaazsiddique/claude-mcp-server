@@ -1,23 +1,26 @@
 # 🧠 Business Intelligence MCP Server
 
-A custom **Model Context Protocol (MCP)** server that connects Claude Desktop to real-time business intelligence tools — company research, AI-powered lead scoring, personalized email drafting, CRM logging, and web research.
+A custom **Model Context Protocol (MCP)** server that connects Claude Desktop (or any MCP-compatible AI client) to real-time business intelligence tools — company research, AI-powered lead scoring, personalized email drafting, CRM logging, and web research.
 
-Built with Python, FastMCP, OpenAI, SerpAPI, and Google Sheets.
+Built with Python, FastMCP, and integrated with OpenAI, SerpAPI, and Google Sheets.
 
 ---
 
-## 🚧 Status
+## What It Does
 
-Currently under active development. Follow along as tools are added step by step.
+Type a natural language request in Claude Desktop, and the AI automatically calls the right tools:
 
-## 📋 Planned Tools
+> *"Research Techlogix, score them as a lead, draft an outreach email, and log everything to my CRM."*
 
-- [ ] Company Lookup (SerpAPI)
-- [ ] Lead Scorer (OpenAI)
-- [ ] Email Drafter (OpenAI)
-- [ ] CRM Logger (Google Sheets)
-- [ ] Web Researcher (SerpAPI)
+Claude will chain all 5 tools together to complete the entire workflow automatically.
 
-## 👨‍💻 Author
+---
 
-**Muaaz Siddique** — AI Automation Developer
+## Tools
+
+| Tool | Description | Powered By |
+|------|-------------|------------|
+| **Company Lookup** | Search for company details — industry, size, HQ, website | SerpAPI |
+| **Lead Scorer** | AI scores a B2B lead 1–10 with reasoning | OpenAI GPT-4o-mini |
+| **Email Drafter** | Generates personalized cold outreach emails | OpenAI GPT-4o-mini |
+| **CRM Logger** | Logs scored leads to a Google Sheets CRM | Goo
